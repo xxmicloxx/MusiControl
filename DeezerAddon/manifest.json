@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "MusiControl Deezer",
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+            "matches": ["https://www.deezer.com/*"],
+            "js": ["browser-polyfill.min.js", "deezer_inject.js"]
+        }
+    ],
+
+    "background": {
+        "scripts": [
+            "browser-polyfill.min.js",
+            "deezer_background.js"
+        ]
+    },
+
+    "permissions": [
+        "nativeMessaging",
+        "tabs"
+    ],
+
+    "web_accessible_resources": [
+        "deezer_observer.js"
+    ]
+}

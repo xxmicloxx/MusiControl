@@ -1,0 +1,25 @@
+# General
+*.swp
+*.swo
+.DS_Store
+xcuserdata
+project.xcworkspace
+DerivedData
+/concatenated.*
+tmp
+coverage/
+.coveralls.yml
+
+# IDEs
+*.xccheckout
+*.xcworkspace
+.idea/
+
+# Bundler files
+/.bundle
+
+# addon stuff
+*.crx
+*.pem
+
+Pods/

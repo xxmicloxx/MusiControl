@@ -1,0 +1,22 @@
+PODS:
+  - BlueSocket (1.0.52)
+  - Kingfisher (5.14.1):
+    - Kingfisher/Core (= 5.14.1)
+  - Kingfisher/Core (5.14.1)
+
+DEPENDENCIES:
+  - BlueSocket
+  - Kingfisher (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - BlueSocket
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  BlueSocket: 1acd943acb07b55905291d608649fcfbf8cbd57d
+  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
+
+PODFILE CHECKSUM: 2058644a77660d4d40767c6aba99319402acf80a
+
+COCOAPODS: 1.9.3

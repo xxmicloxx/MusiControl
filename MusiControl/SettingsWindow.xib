@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SettingsWindowController" customModule="MusiControl" customModuleProvider="target">
+            <connections>
+                <outlet property="sourceDropdown" destination="h0M-Ss-mFC" id="a8d-KL-XsN"/>
+                <outlet property="sourceMenu" destination="qDY-oK-IyI" id="agk-lN-Zfu"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="MusiControl Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" rightStrut="YES" topStrut="YES"/>
+            <rect key="contentRect" x="1172" y="943" width="424" height="59"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="424" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DUe-b9-O1i">
+                        <rect key="frame" x="38" y="23" width="51" height="16"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Source:" id="q14-0w-Fsc">
+                            <font key="font" usesAppearanceFont="YES"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="h0M-Ss-mFC">
+                        <rect key="frame" x="93" y="16" width="284" height="25"/>
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="nCx-Zc-lE8">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <menu key="menu" id="qDY-oK-IyI"/>
+                        </popUpButtonCell>
+                    </popUpButton>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DUe-b9-O1i" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="Gl7-Qt-SUL"/>
+                    <constraint firstItem="DUe-b9-O1i" firstAttribute="firstBaseline" secondItem="h0M-Ss-mFC" secondAttribute="firstBaseline" id="TK6-ZO-kv9"/>
+                    <constraint firstAttribute="trailing" secondItem="h0M-Ss-mFC" secondAttribute="trailing" constant="50" id="nrz-v9-gYp"/>
+                    <constraint firstItem="h0M-Ss-mFC" firstAttribute="leading" secondItem="DUe-b9-O1i" secondAttribute="trailing" constant="8" id="oAt-e3-Ac2"/>
+                    <constraint firstItem="DUe-b9-O1i" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="40" id="otL-ey-pDI"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+                <outlet property="menu" destination="NuK-if-e5d" id="kIn-q9-uP2"/>
+            </connections>
+            <point key="canvasLocation" x="96" y="43.5"/>
+        </window>
+        <menu title="Main Menu" systemMenu="main" id="NuK-if-e5d">
+            <items>
+                <menuItem title="MusiControl" id="DqX-I4-pqk">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="MusiControl" systemMenu="apple" id="rJW-pH-gmP">
+                        <items>
+                            <menuItem title="About MusiControl" id="ZAi-2j-Gcv">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="mN6-zk-dLZ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Check for Updates..." id="vLx-JE-9gX">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="Vli-oH-i0H"/>
+                            <menuItem title="Hide MusiControl" keyEquivalent="h" id="Hw9-I9-gkW">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="l6d-h1-dOC"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="1Y5-er-Gd4">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="dre-2j-pSo"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="PDi-ka-Vh6">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="KWX-jh-7AP"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="oWN-Z7-aDU"/>
+                            <menuItem title="Quit MusiControl" keyEquivalent="q" id="ium-IY-eyS">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="wPw-OD-wZY"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Preferences" id="qiu-TW-5y3" userLabel="Utility">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Preferences" id="tkZ-h0-TqD">
+                        <items>
+                            <menuItem title="Close" keyEquivalent="w" id="zna-L5-sHs">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="pll-Ew-2qs"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="Jmu-LX-ESj">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Edit" id="uiV-4t-ZWQ">
+                        <items>
+                            <menuItem title="Undo" keyEquivalent="z" id="2pR-Od-saW">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="2bM-LG-7rf"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Redo" keyEquivalent="Z" id="bZ1-A4-66r">
+                                <connections>
+                                    <action selector="redo:" target="-1" id="wUD-We-VJD"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="3k2-4M-WQx"/>
+                            <menuItem title="Cut" keyEquivalent="x" id="XLF-P2-UnX">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="qL5-6j-pmU"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copy" keyEquivalent="c" id="Ras-fV-0Yk">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="8bi-Ue-Cfs"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste" keyEquivalent="v" id="HJ2-gN-Gft">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="FMy-QQ-MWw"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste and Match Style" keyEquivalent="V" id="we4-VY-7Gr">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="pasteAsPlainText:" target="-1" id="E1L-gq-myH"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Delete" id="LcH-5A-KeH">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="delete:" target="-1" id="Idz-Mt-rhQ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Select All" keyEquivalent="a" id="NCC-x1-gtg">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="SQx-0i-32C"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="View" id="kDe-lD-Z2y">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="View" id="EBZ-v2-MZP">
+                        <items>
+                            <menuItem title="Enter Full Screen" keyEquivalent="f" id="mG4-AI-AeM">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="toggleFullScreen:" target="-1" id="x7X-MV-hMZ"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="f2e-he-ynJ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Window" systemMenu="window" id="ye9-hK-qCf">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="mEd-49-dlO">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="7tL-JZ-rqA"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" id="Y3s-bh-bfB">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="8WS-pt-xg3"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="boN-hE-eYG"/>
+                            <menuItem title="Bring All to Front" id="djx-dS-XE7">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="FPp-fc-5rt"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="140" y="-203"/>
+        </menu>
+    </objects>
+</document>

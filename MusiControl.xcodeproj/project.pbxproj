@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C4639D0BB5BC078DA0BEF4F /* Pods_MusiControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46287184239F85F6EDAE57FD /* Pods_MusiControl.framework */; };
+		6D05F4DA24E33C360067C26B /* NativeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D05F4D924E33C360067C26B /* NativeHandler.swift */; };
+		6D2C26B224E53F5400E3D86C /* ImageQuantifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2C26B124E53F5400E3D86C /* ImageQuantifier.swift */; };
+		6D4DDD4024E9EAA500D6B78C /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4DDD3E24E9EAA500D6B78C /* SettingsWindowController.swift */; };
+		6D4DDD4124E9EAA500D6B78C /* SettingsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D4DDD3F24E9EAA500D6B78C /* SettingsWindow.xib */; };
+		6D57270824EAD012001D01BA /* BackendRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57270724EAD012001D01BA /* BackendRegistry.swift */; };
+		6D59E0A224E2B93F00D0B188 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D59E0A124E2B93F00D0B188 /* main.swift */; };
+		6D59E0A724E2BC5100D0B188 /* BridgeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D59E0A624E2BC5100D0B188 /* BridgeConstants.swift */; };
+		6D59E0A824E2BC5100D0B188 /* BridgeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D59E0A624E2BC5100D0B188 /* BridgeConstants.swift */; };
+		6D59E0BE24E30B5200D0B188 /* JsonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D59E0BD24E30B5200D0B188 /* JsonProtocol.swift */; };
+		6D70AC8E24DD9C02008515FB /* CustomWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D70AC8D24DD9C02008515FB /* CustomWindow.swift */; };
+		6D97023E24E72D8700B4D8D3 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D97023D24E72D8700B4D8D3 /* MASShortcut.framework */; };
+		6D97023F24E72D8700B4D8D3 /* MASShortcut.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D97023D24E72D8700B4D8D3 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DA59CFF24E87980009F59DC /* NativeInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA59CFE24E87980009F59DC /* NativeInstaller.swift */; };
+		6DA59D0324E87A0B009F59DC /* MusiControlBridge in Resources */ = {isa = PBXBuildFile; fileRef = 6D59E09F24E2B93F00D0B188 /* MusiControlBridge */; };
+		6DB360AB24DC0382002099C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB360AA24DC0382002099C1 /* AppDelegate.swift */; };
+		6DB360AD24DC0385002099C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB360AC24DC0385002099C1 /* Assets.xcassets */; };
+		6DB360B024DC0385002099C1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB360AE24DC0385002099C1 /* MainMenu.xib */; };
+		6DB360BD24DC06B5002099C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB360BC24DC06B5002099C1 /* MainViewController.swift */; };
+		6DB360C124DC8B20002099C1 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB360C024DC8B20002099C1 /* CustomView.swift */; };
+		6DB360C324DCA0D7002099C1 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB360C224DCA0D7002099C1 /* ProgressView.swift */; };
+		6DC909BA24EE776F00EBFB52 /* SpotifyBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC909B924EE776F00EBFB52 /* SpotifyBackend.swift */; };
+		6DDBEBBF24E56EF0008C4ED4 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDBEBBE24E56EF0008C4ED4 /* PriorityQueue.swift */; };
+		6DF6B8DD24EABE9900A5A06D /* MusiBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6B8DC24EABE9900A5A06D /* MusiBackend.swift */; };
+		6DF6B8DF24EAC12400A5A06D /* BrowserBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6B8DE24EAC12400A5A06D /* BrowserBackend.swift */; };
+		6DF6B8E124EAC1C900A5A06D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6B8E024EAC1C900A5A06D /* Model.swift */; };
+		DF8EB4F2E3424EE33D1384C1 /* libPods-MusiControlBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD872CB8352BB58F02D2DF8 /* libPods-MusiControlBridge.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DA59D0024E87990009F59DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB3609F24DC0382002099C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D59E09E24E2B93F00D0B188;
+			remoteInfo = MusiControlBridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6DE9109624E72CA500A2081E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6D97023F24E72D8700B4D8D3 /* MASShortcut.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0535D0C93BFF1F225098C12B /* Pods-MusiControlBridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiControlBridge.debug.xcconfig"; path = "Target Support Files/Pods-MusiControlBridge/Pods-MusiControlBridge.debug.xcconfig"; sourceTree = "<group>"; };
+		46287184239F85F6EDAE57FD /* Pods_MusiControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusiControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D05F4D924E33C360067C26B /* NativeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeHandler.swift; sourceTree = "<group>"; };
+		6D2C26B124E53F5400E3D86C /* ImageQuantifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQuantifier.swift; sourceTree = "<group>"; };
+		6D4DDD3E24E9EAA500D6B78C /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		6D4DDD3F24E9EAA500D6B78C /* SettingsWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsWindow.xib; sourceTree = "<group>"; };
+		6D57270724EAD012001D01BA /* BackendRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendRegistry.swift; sourceTree = "<group>"; };
+		6D59E09F24E2B93F00D0B188 /* MusiControlBridge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MusiControlBridge; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D59E0A124E2B93F00D0B188 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6D59E0A624E2BC5100D0B188 /* BridgeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeConstants.swift; sourceTree = "<group>"; };
+		6D59E0BD24E30B5200D0B188 /* JsonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonProtocol.swift; sourceTree = "<group>"; };
+		6D70AC8D24DD9C02008515FB /* CustomWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWindow.swift; sourceTree = "<group>"; };
+		6D97023D24E72D8700B4D8D3 /* MASShortcut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MASShortcut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA59CFE24E87980009F59DC /* NativeInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeInstaller.swift; sourceTree = "<group>"; };
+		6DB360A724DC0382002099C1 /* MusiControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusiControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB360AA24DC0382002099C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DB360AC24DC0385002099C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DB360AF24DC0385002099C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6DB360B124DC0385002099C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DB360B224DC0385002099C1 /* MusiControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MusiControl.entitlements; sourceTree = "<group>"; };
+		6DB360BC24DC06B5002099C1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6DB360C024DC8B20002099C1 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		6DB360C224DCA0D7002099C1 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		6DBBC29524E72289000D9370 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		6DC909B924EE776F00EBFB52 /* SpotifyBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyBackend.swift; sourceTree = "<group>"; };
+		6DDBEBBE24E56EF0008C4ED4 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		6DF6B8DC24EABE9900A5A06D /* MusiBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiBackend.swift; sourceTree = "<group>"; };
+		6DF6B8DE24EAC12400A5A06D /* BrowserBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserBackend.swift; sourceTree = "<group>"; };
+		6DF6B8E024EAC1C900A5A06D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8EE3577D3E57142AA96C6E6F /* Pods-MusiControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiControl.debug.xcconfig"; path = "Target Support Files/Pods-MusiControl/Pods-MusiControl.debug.xcconfig"; sourceTree = "<group>"; };
+		BD5E0F078EC3355C75FDD275 /* Pods-MusiControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiControl.release.xcconfig"; path = "Target Support Files/Pods-MusiControl/Pods-MusiControl.release.xcconfig"; sourceTree = "<group>"; };
+		C668AD09D2618541D0A1BBAD /* Pods-MusiControlBridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusiControlBridge.release.xcconfig"; path = "Target Support Files/Pods-MusiControlBridge/Pods-MusiControlBridge.release.xcconfig"; sourceTree = "<group>"; };
+		EAD872CB8352BB58F02D2DF8 /* libPods-MusiControlBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusiControlBridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D59E09C24E2B93F00D0B188 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8EB4F2E3424EE33D1384C1 /* libPods-MusiControlBridge.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB360A424DC0382002099C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D97023E24E72D8700B4D8D3 /* MASShortcut.framework in Frameworks */,
+				1C4639D0BB5BC078DA0BEF4F /* Pods_MusiControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BA14E5CDBC01E809BF8D3B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EE3577D3E57142AA96C6E6F /* Pods-MusiControl.debug.xcconfig */,
+				BD5E0F078EC3355C75FDD275 /* Pods-MusiControl.release.xcconfig */,
+				0535D0C93BFF1F225098C12B /* Pods-MusiControlBridge.debug.xcconfig */,
+				C668AD09D2618541D0A1BBAD /* Pods-MusiControlBridge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D59E0A024E2B93F00D0B188 /* MusiControlBridge */ = {
+			isa = PBXGroup;
+			children = (
+				6D59E0A124E2B93F00D0B188 /* main.swift */,
+				6D59E0A624E2BC5100D0B188 /* BridgeConstants.swift */,
+			);
+			path = MusiControlBridge;
+			sourceTree = "<group>";
+		};
+		6DB3609E24DC0382002099C1 = {
+			isa = PBXGroup;
+			children = (
+				6DB360A924DC0382002099C1 /* MusiControl */,
+				6D59E0A024E2B93F00D0B188 /* MusiControlBridge */,
+				6DB360A824DC0382002099C1 /* Products */,
+				1BA14E5CDBC01E809BF8D3B1 /* Pods */,
+				D6777C0B88461109E17C15A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6DB360A824DC0382002099C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DB360A724DC0382002099C1 /* MusiControl.app */,
+				6D59E09F24E2B93F00D0B188 /* MusiControlBridge */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DB360A924DC0382002099C1 /* MusiControl */ = {
+			isa = PBXGroup;
+			children = (
+				6DF6B8DB24EABE7A00A5A06D /* Backend */,
+				6D59E0BD24E30B5200D0B188 /* JsonProtocol.swift */,
+				6DB360AA24DC0382002099C1 /* AppDelegate.swift */,
+				6DB360AC24DC0385002099C1 /* Assets.xcassets */,
+				6DB360AE24DC0385002099C1 /* MainMenu.xib */,
+				6DB360B124DC0385002099C1 /* Info.plist */,
+				6DB360B224DC0385002099C1 /* MusiControl.entitlements */,
+				6DB360BC24DC06B5002099C1 /* MainViewController.swift */,
+				6DB360C024DC8B20002099C1 /* CustomView.swift */,
+				6DB360C224DCA0D7002099C1 /* ProgressView.swift */,
+				6D70AC8D24DD9C02008515FB /* CustomWindow.swift */,
+				6D2C26B124E53F5400E3D86C /* ImageQuantifier.swift */,
+				6DDBEBBE24E56EF0008C4ED4 /* PriorityQueue.swift */,
+				6DBBC29524E72289000D9370 /* BridgingHeader.h */,
+				6DA59CFE24E87980009F59DC /* NativeInstaller.swift */,
+				6D4DDD3E24E9EAA500D6B78C /* SettingsWindowController.swift */,
+				6D4DDD3F24E9EAA500D6B78C /* SettingsWindow.xib */,
+				6DF6B8E024EAC1C900A5A06D /* Model.swift */,
+			);
+			path = MusiControl;
+			sourceTree = "<group>";
+		};
+		6DF6B8DB24EABE7A00A5A06D /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				6DF6B8DC24EABE9900A5A06D /* MusiBackend.swift */,
+				6DF6B8DE24EAC12400A5A06D /* BrowserBackend.swift */,
+				6D05F4D924E33C360067C26B /* NativeHandler.swift */,
+				6D57270724EAD012001D01BA /* BackendRegistry.swift */,
+				6DC909B924EE776F00EBFB52 /* SpotifyBackend.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		D6777C0B88461109E17C15A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D97023D24E72D8700B4D8D3 /* MASShortcut.framework */,
+				46287184239F85F6EDAE57FD /* Pods_MusiControl.framework */,
+				EAD872CB8352BB58F02D2DF8 /* libPods-MusiControlBridge.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D59E09E24E2B93F00D0B188 /* MusiControlBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D59E0A324E2B93F00D0B188 /* Build configuration list for PBXNativeTarget "MusiControlBridge" */;
+			buildPhases = (
+				CD1E2EA62DC44CE55829DD57 /* [CP] Check Pods Manifest.lock */,
+				6D59E09B24E2B93F00D0B188 /* Sources */,
+				6D59E09C24E2B93F00D0B188 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusiControlBridge;
+			productName = MusiControlBridge;
+			productReference = 6D59E09F24E2B93F00D0B188 /* MusiControlBridge */;
+			productType = "com.apple.product-type.tool";
+		};
+		6DB360A624DC0382002099C1 /* MusiControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DB360B524DC0385002099C1 /* Build configuration list for PBXNativeTarget "MusiControl" */;
+			buildPhases = (
+				2D17021F6B202068E442A7E2 /* [CP] Check Pods Manifest.lock */,
+				6DB360A324DC0382002099C1 /* Sources */,
+				6DB360A424DC0382002099C1 /* Frameworks */,
+				6DB360A524DC0382002099C1 /* Resources */,
+				C1B86ACBB6BC312693ADC8A0 /* [CP] Embed Pods Frameworks */,
+				6DE9109624E72CA500A2081E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DA59D0124E87990009F59DC /* PBXTargetDependency */,
+			);
+			name = MusiControl;
+			productName = MusiControl;
+			productReference = 6DB360A724DC0382002099C1 /* MusiControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DB3609F24DC0382002099C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Michael Loy";
+				TargetAttributes = {
+					6D59E09E24E2B93F00D0B188 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					6DB360A624DC0382002099C1 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 6DB360A224DC0382002099C1 /* Build configuration list for PBXProject "MusiControl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				ja,
+				cs,
+				pt,
+				"zh-Hans",
+				es,
+				it,
+				sv,
+				ko,
+				"zh-Hant",
+				pl,
+				ru,
+				fr,
+				nl,
+			);
+			mainGroup = 6DB3609E24DC0382002099C1;
+			productRefGroup = 6DB360A824DC0382002099C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DB360A624DC0382002099C1 /* MusiControl */,
+				6D59E09E24E2B93F00D0B188 /* MusiControlBridge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DB360A524DC0382002099C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA59D0324E87A0B009F59DC /* MusiControlBridge in Resources */,
+				6DB360AD24DC0385002099C1 /* Assets.xcassets in Resources */,
+				6D4DDD4124E9EAA500D6B78C /* SettingsWindow.xib in Resources */,
+				6DB360B024DC0385002099C1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D17021F6B202068E442A7E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusiControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1B86ACBB6BC312693ADC8A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusiControl/Pods-MusiControl-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusiControl/Pods-MusiControl-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusiControl/Pods-MusiControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD1E2EA62DC44CE55829DD57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusiControlBridge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D59E09B24E2B93F00D0B188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D59E0A824E2BC5100D0B188 /* BridgeConstants.swift in Sources */,
+				6D59E0A224E2B93F00D0B188 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB360A324DC0382002099C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF6B8E124EAC1C900A5A06D /* Model.swift in Sources */,
+				6D57270824EAD012001D01BA /* BackendRegistry.swift in Sources */,
+				6DA59CFF24E87980009F59DC /* NativeInstaller.swift in Sources */,
+				6D59E0A724E2BC5100D0B188 /* BridgeConstants.swift in Sources */,
+				6DB360C124DC8B20002099C1 /* CustomView.swift in Sources */,
+				6DF6B8DF24EAC12400A5A06D /* BrowserBackend.swift in Sources */,
+				6D2C26B224E53F5400E3D86C /* ImageQuantifier.swift in Sources */,
+				6DF6B8DD24EABE9900A5A06D /* MusiBackend.swift in Sources */,
+				6DB360C324DCA0D7002099C1 /* ProgressView.swift in Sources */,
+				6D05F4DA24E33C360067C26B /* NativeHandler.swift in Sources */,
+				6DB360AB24DC0382002099C1 /* AppDelegate.swift in Sources */,
+				6D70AC8E24DD9C02008515FB /* CustomWindow.swift in Sources */,
+				6DDBEBBF24E56EF0008C4ED4 /* PriorityQueue.swift in Sources */,
+				6D59E0BE24E30B5200D0B188 /* JsonProtocol.swift in Sources */,
+				6D4DDD4024E9EAA500D6B78C /* SettingsWindowController.swift in Sources */,
+				6DB360BD24DC06B5002099C1 /* MainViewController.swift in Sources */,
+				6DC909BA24EE776F00EBFB52 /* SpotifyBackend.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DA59D0124E87990009F59DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D59E09E24E2B93F00D0B188 /* MusiControlBridge */;
+			targetProxy = 6DA59D0024E87990009F59DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DB360AE24DC0385002099C1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DB360AF24DC0385002099C1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D59E0A424E2B93F00D0B188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0535D0C93BFF1F225098C12B /* Pods-MusiControlBridge.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69FQB9F8CR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6D59E0A524E2B93F00D0B188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C668AD09D2618541D0A1BBAD /* Pods-MusiControlBridge.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69FQB9F8CR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6DB360B324DC0385002099C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DB360B424DC0385002099C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6DB360B624DC0385002099C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EE3577D3E57142AA96C6E6F /* Pods-MusiControl.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MusiControl/MusiControl.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 69FQB9F8CR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MusiControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxmicloxx.MusiControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MusiControl/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6DB360B724DC0385002099C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD5E0F078EC3355C75FDD275 /* Pods-MusiControl.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MusiControl/MusiControl.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 69FQB9F8CR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MusiControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxmicloxx.MusiControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MusiControl/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D59E0A324E2B93F00D0B188 /* Build configuration list for PBXNativeTarget "MusiControlBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D59E0A424E2B93F00D0B188 /* Debug */,
+				6D59E0A524E2B93F00D0B188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DB360A224DC0382002099C1 /* Build configuration list for PBXProject "MusiControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB360B324DC0385002099C1 /* Debug */,
+				6DB360B424DC0385002099C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DB360B524DC0385002099C1 /* Build configuration list for PBXNativeTarget "MusiControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB360B624DC0385002099C1 /* Debug */,
+				6DB360B724DC0385002099C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DB3609F24DC0382002099C1 /* Project object */;
+}
