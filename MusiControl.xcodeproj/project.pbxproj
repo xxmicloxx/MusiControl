@@ -434,7 +434,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0535D0C93BFF1F225098C12B /* Pods-MusiControlBridge.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -451,7 +451,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C668AD09D2618541D0A1BBAD /* Pods-MusiControlBridge.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
