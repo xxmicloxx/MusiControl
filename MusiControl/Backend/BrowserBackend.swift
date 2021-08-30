@@ -77,7 +77,7 @@ class BrowserBackend : MusiBackend, NativeHandlerDelegate {
         sendAction("open")
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1, execute: {
-            let apps = NSRunningApplication.runningApplications(withBundleIdentifier: "org.mozilla.firefox")
+            let apps = NSRunningApplication.runningApplications(withBundleIdentifier: "com.vivaldi.Vivaldi")
             if apps.count < 1 {
                 return
             }

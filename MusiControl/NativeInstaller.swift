@@ -36,10 +36,36 @@ class NativeInstaller {
         }
     }
     
+    private func installVivaldi() {
+        var jsonObj = generalJsonObject
+        
+        let allowedOrigins: [String] = ["chrome-extension://bammcdhdafecckeepbpfichifdbnmhfd/"]
+        jsonObj["allowed_origins"] = allowedOrigins
+        
+        do {
+            let data = try JSONSerialization.data(withJSONObject: jsonObj, options: [.prettyPrinted])
+            
+            let appSupport = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
+            
+            let chromeDir = appSupport
+                .appendingPathComponent("Vivaldi", isDirectory: true)
+                .appendingPathComponent("NativeMessagingHosts", isDirectory: true)
+                .appendingPathComponent("\(name).json", isDirectory: false)
+            
+            try FileManager.default.createDirectory(at: chromeDir.deletingLastPathComponent(),
+                                                    withIntermediateDirectories: true, attributes: nil)
+            
+            try data.write(to: chromeDir, options: [.atomic])
+        } catch let error {
+            print("Could not write Chrome manifest")
+            NSApp.presentError(error)
+        }
+    }
+    
     private func installChrome() {
         var jsonObj = generalJsonObject
         
-        let allowedOrigins: [String] = ["chrome-extension://hjbkjeikpnpakhhdgpfnbkhnbhfflolk/"]
+        let allowedOrigins: [String] = ["chrome-extension://bammcdhdafecckeepbpfichifdbnmhfd/"]
         jsonObj["allowed_origins"] = allowedOrigins
         
         do {
